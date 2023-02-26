@@ -11,7 +11,7 @@ describe('Checking generated html files', () => {
     if(files.length > 0) {
       done()
     } else {
-      throw new Error('html generated error')
+      throw new Error('no html generated')
     }
   })
 })

@@ -6,7 +6,9 @@
   "scripts": {
     "test": "istanbul cover ./node_modules/.bin/_mocha",
     "eslint": "eslint --fix lib/",
-    "smoke": "node test/smoke/index.js"
+    "smoke": "node test/smoke/index.js",
+    "commitmsg": "validate-commit-msg",
+    "changelog": "conventional-changelog -p angular CHANGELOG.md -i -s -r 0"
   },
   "keywords": [],
   "author": "",
@@ -53,10 +55,13 @@
   "devDependencies": {
     "assert": "^2.0.0",
     "babel-eslint": "^10.0.1",
+    "conventional-changelog-cli": "^1.2.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
+    "husky": "^0.13.1",
     "istanbul": "^0.4.5",
     "mocha": "^6.1.4",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.6.3",
+    "validate-commit-msg": "^2.11.1"
   }
 }
